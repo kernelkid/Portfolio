@@ -1,0 +1,334 @@
+/* --------------------------------------------------
+   Hulesh Sahu - Personal Portfolio Stylesheet
+   Clean Solid Colors, 2015 Web Style, Fully Responsive
+   Conforms strictly to HTML & CSS Internship Project Guide
+   -------------------------------------------------- */
+
+:root {
+  --primary-color: #2c3e50;       /* Dark Midnight Blue */
+  --secondary-color: #34495e;     /* Slate Blue */
+  --accent-color: #3498db;        /* Classic Solid Flat Blue */
+  --accent-hover: #2980b9;        /* Darker Blue Hover */
+  --bg-color: #f4f6f8;            /* Soft Neutral Page Background */
+  --card-bg: #ffffff;             /* Pure White Container */
+  --text-main: #333333;           /* High Contrast Body Text */
+  --text-muted: #666666;          /* Subtitle and Secondary Text */
+  --border-color: #dddddd;        /* Crisp Borders */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--text-main);
+  background-color: var(--bg-color);
+}
+
+.container {
+  width: 90%;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* 1. Header & Navigation */
+.header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 16px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 15px;
+  padding: 4px 6px;
+  border-radius: 3px;
+}
+
+.nav a:hover,
+.nav a:focus {
+  background-color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* 2. Hero Section */
+.hero {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 45px 15px;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 17px;
+  color: #bdc3c7;
+  margin-bottom: 12px;
+}
+
+.bio-short {
+  max-width: 580px;
+  margin: 0 auto 20px auto;
+  font-size: 15px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* 3. Main Sections */
+.main-content {
+  padding: 28px 0 40px 0;
+}
+
+.section {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.section h2 {
+  font-size: 22px;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.section h3 {
+  font-size: 17px;
+  color: var(--primary-color);
+  margin: 18px 0 10px 0;
+}
+
+.section p {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.simple-list {
+  padding-left: 20px;
+  margin-bottom: 14px;
+}
+
+.simple-list li {
+  margin-bottom: 6px;
+}
+
+/* 4. Skills */
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.skill-tag {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.skill-tag:hover {
+  background-color: var(--accent-hover);
+}
+
+/* 5. Projects */
+.project-item {
+  background-color: #fafafa;
+  border-left: 4px solid var(--accent-color);
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+
+.project-item h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.project-links {
+  margin-top: 10px;
+}
+
+.link-btn {
+  display: inline-block;
+  margin-right: 14px;
+  color: var(--accent-hover);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.link-btn:hover,
+.link-btn:focus {
+  text-decoration: underline;
+}
+
+/* 6. Contact & Form */
+.contact-details p {
+  margin-bottom: 8px;
+}
+
+.contact-details a {
+  color: var(--accent-hover);
+  text-decoration: none;
+}
+
+.contact-details a:hover,
+.contact-details a:focus {
+  text-decoration: underline;
+}
+
+.form-disclaimer {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.contact-form {
+  margin-top: 10px;
+}
+
+.form-row {
+  margin-bottom: 14px;
+}
+
+.form-row label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  border-color: var(--accent-color);
+  outline: 2px solid var(--accent-color);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  padding: 9px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-hover);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* 7. Footer */
+.footer {
+  background-color: var(--primary-color);
+  color: #bdc3c7;
+  text-align: center;
+  padding: 24px 10px;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 4px 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 650px) {
+  .header .container {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+  .nav a {
+    margin: 0 4px;
+  }
+  .section {
+    padding: 18px 14px;
+  }
+  .hero {
+    padding: 35px 12px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}

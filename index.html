@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hulesh Sahu | Personal Portfolio</title>
+  <meta name="description" content="Personal portfolio of Hulesh Sahu - Student and Frontend Web Developer">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Header / Navigation Section -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="#home">Hulesh Sahu</a>
+      </div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. Hero / Home Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <img src="Hulesh Photo.jpeg" alt="Photo of Hulesh Sahu" class="profile-pic">
+        <h1>Hello, I'm Hulesh Sahu</h1>
+        <p class="subtitle">Computer Science Student &amp; Aspiring Frontend Developer</p>
+        <p class="bio-short">Welcome to my personal homepage. I build simple, clean, and responsive websites using semantic HTML and CSS.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn">View My Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <div class="container main-content">
+
+      <!-- 3. About Me Section -->
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I am a B.Tech Computer Science student with a keen interest in web design and frontend development. I enjoy learning web technologies and building accessible, well-structured web interfaces.</p>
+        
+        <h3>Education</h3>
+        <ul class="simple-list">
+          <li><strong>Bachelor of Technology (B.Tech)</strong> in Computer Science &amp; Engineering (2025 – 2029)</li>
+          <li><strong>Higher Secondary School Certificate (12th Grade)</strong> – Science Stream (2024 – 2025)</li>
+        </ul>
+
+        <h3>Career Interests</h3>
+        <p>I am passionate about frontend web development, responsive web design, UI styling, and open-source learning. Currently looking for internship and project opportunities to apply and expand my skills.</p>
+      </section>
+
+      <!-- 4. Skills Section -->
+      <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <p>A snapshot of tools and technologies I use to build websites:</p>
+        <div class="skills-box">
+          <span class="skill-tag">HTML5 Semantics</span>
+          <span class="skill-tag">CSS3 Styling</span>
+          <span class="skill-tag">Responsive Web Design</span>
+          <span class="skill-tag">Flexbox Layouts</span>
+          <span class="skill-tag">CSS Grid</span>
+          <span class="skill-tag">Git &amp; GitHub</span>
+          <span class="skill-tag">VS Code &amp; DevTools</span>
+        </div>
+      </section>
+
+      <!-- 5. Projects Section -->
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <p>Here are some of the practical academic and hands-on projects I have created:</p>
+
+        <article class="project-item">
+          <h3>1. Responsive Personal Portfolio Website</h3>
+          <p>A personal portfolio website built with semantic HTML5 and clean CSS to introduce myself, showcase competencies, and share projects.</p>
+          <p><strong>Technologies used:</strong> HTML5, CSS3, Flexbox, Responsive Design</p>
+          <div class="project-links">
+            <a href="#home" class="link-btn">Back to Top &uarr;</a>
+            <a href="#contact" class="link-btn">Inquire &rarr;</a>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <h3>2. EcoGreen Landing Page</h3>
+          <p>A multi-section promotional landing page concept for an eco-friendly brand with clean layout cards and responsive design across screen sizes.</p>
+          <p><strong>Technologies used:</strong> Semantic HTML5, CSS Layouts, Media Queries</p>
+          <div class="project-links">
+            <a href="#skills" class="link-btn">Related Skills &rarr;</a>
+            <a href="#contact" class="link-btn">Discuss Project &rarr;</a>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <h3>3. TechNotes Blog Layout</h3>
+          <p>A clean editorial blog template designed with clear hierarchy, readable typography, and structured article sections for developer articles.</p>
+          <p><strong>Technologies used:</strong> HTML5 Article/Aside, CSS Typography, Flexbox</p>
+          <div class="project-links">
+            <a href="#about" class="link-btn">About Developer &rarr;</a>
+            <a href="#contact" class="link-btn">Contact &rarr;</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- 6. Contact Section -->
+      <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>I am open to internship opportunities, learning collaborations, or general questions. Feel free to connect!</p>
+
+        <div class="contact-details">
+          <p><strong>Email Address:</strong> <a href="mailto:huleshsahu006@gmail.com">huleshsahu006@gmail.com</a></p>
+          <p><strong>GitHub Profile:</strong> <a href="https://github.com/kernelkid/" target="_blank" rel="noopener noreferrer">github.com/huleshsahu</a></p>
+          <p><strong>LinkedIn Profile:</strong> <a href="https://linkedin.com/in/hulesh-sahu" target="_blank" rel="noopener noreferrer">linkedin.com/in/hulesh-sahu</a></p>
+          <p><strong>Location:</strong> Chhattisgarh, India</p>
+        </div>
+
+        <h3>Send a Message</h3>
+        <p class="form-disclaimer"><em>Note: This contact form is a visual demo built strictly with HTML &amp; CSS.</em></p>
+        
+        <form class="contact-form" action="#" method="get">
+          <div class="form-row">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="e.g. John Doe" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="e.g. john@example.com" required>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- 7. Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Hulesh Sahu. All rights reserved.</p>
+      <p>Built with semantic HTML5 &amp; CSS3 for the HTML &amp; CSS Internship Project.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
